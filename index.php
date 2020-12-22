@@ -3,9 +3,9 @@
 
    $userWord = $_GET["word"];
 
-   $paragraph_polite = str_replace($userWord, '***', $paragraph);
+   $paragraph = str_replace($userWord, '***', $paragraph);
 ?>
 
-<p> <?php echo $paragraph_polite ?> </p>
+<p> <?php echo $paragraph ?> </p>
 
-<span>Lunghezza paragrafo: <?php echo strlen($paragraph_polite) ?> caratteri</span>
+<span>Lunghezza paragrafo: <?php echo strlen($paragraph) ?> caratteri</span>
